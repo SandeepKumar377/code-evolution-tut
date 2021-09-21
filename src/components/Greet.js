@@ -1,11 +1,18 @@
 import React from "react";
 
+// const Greet = ({name, heroName}) => {
+//     return (
+//         <div>
+//             <h1>Hello {name}....Hero name {heroName} from Greet component</h1>
+//         </div>
+//     )
+// }
+
 const Greet = (props) => {
-    console.log(props)
+    const {name, heroName}= props
     return (
         <div>
-            <h1>Hello {props.name}....Hero name {props.heroName} from Greet component</h1>
-            {props.children}
+            <h1>Hello {name}....Hero name {heroName} from Greet component</h1>
         </div>
     )
 }

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
 
-      <Counter/>
+      {/* <Counter/> */}
 
       {/* <Message /> */}
 
@@ -18,9 +18,9 @@ function App() {
       </Greet>
       <Greet name="Sendy" heroName="Ajay">
         <button>Action</button>
-      </Greet >
-      <Greet name="Deep" heroName="Sanjay"/>
-      <Welcome name="Sandeep"  heroName="Salman"/>
+      </Greet > */}
+       <Welcome name="Sandeep"  heroName="Salman"/>
+      {/* <Greet name="Deep" heroName="Sanjay"/>
       <Welcome name="Ajay" heroName="Ajay"/>
       <Welcome name="Sanjay" heroName="Sanjay"/>
       <Hello /> */}
