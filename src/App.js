@@ -1,5 +1,7 @@
 import './App.css';
-import NameList from './components/NameList';
+import InlineCSS from './components/InlineCSS';
+// import StyleSheet from './components/StyleSheet';
+// import NameList from './components/NameList';
 // import ClassClick from './components/ClassClick';
 // import Counter from './components/Counter';
 // import EventBind from './components/EventBind';
@@ -14,8 +16,10 @@ import NameList from './components/NameList';
 function App() {
   return (
     <div className="App">
-
-      <NameList />
+      
+      <InlineCSS />
+      {/* <StyleSheet primary={true} /> */}
+      {/* <NameList /> */}
       {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
       {/* <FunctionClick /> */}

@@ -1,0 +1,13 @@
+.primary{
+    color: green;
+}
+
+.xl-font{
+    font-size: 10px;
+}
+.xxl-font{
+    font-size: 10pt;
+}
+.xxxl-font{
+    font-size: 10pc;
+}
