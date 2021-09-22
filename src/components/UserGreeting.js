@@ -15,7 +15,7 @@ class UserGreeting extends Component {
         //In this approach if condition is true then show data if false then nothing happen 
         return this.state.isLogedIn && <h1>Hello...Sandeep</h1>
          // 3rd method using JSX method 
-         return this.state.isLogedIn?<h1>Hello...Sandeep</h1>:<h1>Hello...Guest</h1>
+        //  return this.state.isLogedIn?<h1>Hello...Sandeep</h1>:<h1>Hello...Guest</h1>
 
         // 2nd method element varriable approach
 
