@@ -2,8 +2,8 @@ import React from "react";
 import Person from "./person";
 
 const NameList = () => {
-    // const names = ['Sandeep', 'Sendy', 'Deep']
-    // const listName= names.map(name => <p>{name}</p>)
+    const names = ['Sandeep', 'Sendy', 'Deep']
+    const listName= names.map((name, index) => <p key={index} >{name}</p>)
     const personList = [
         {
             id: 1,
@@ -12,13 +12,13 @@ const NameList = () => {
             skill: "React"
         },
         {
-            id: 1,
+            id: 2,
             name: "Sendy",
             age: 23,
             skill: "Angular"
         },
         {
-            id: 1,
+            id: 3,
             name: "Deep",
             age: 24,
             skill: "Asp.Net MVC"
@@ -29,11 +29,11 @@ const NameList = () => {
         <div>
             {/* 3rd example */}
             {personList.map(person => (
-                <Person key={person.age} person={person} />
+                <Person key={person.id} person={person} />
             ))}
 
             {/* 2nd method */}
-            {/* {listName} */}
+            {listName}
 
 
             {/*1st method */}
