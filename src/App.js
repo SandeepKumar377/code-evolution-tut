@@ -1,5 +1,6 @@
 import './App.css';
-import Form from './components/Form';
+// import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 // import InlineCSS from './components/InlineCSS';
 // import StyleSheet from './components/StyleSheet';
 // import NameList from './components/NameList';
@@ -20,7 +21,8 @@ function App() {
   return (
     <div className="App">
 
-      <Form/>
+    <LifeCycleA />
+      {/* <Form/> */}
       {/* <h1 className='error'>Message</h1>
       <h1 className={styles.success}>Message</h1> */}
       {/* <InlineCSS /> */}
