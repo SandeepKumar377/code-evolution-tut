@@ -1,5 +1,7 @@
 import './App.css';
-import PortalDemo from './components/PortalDemo';
+import ErrorBoundary from './components/ErrorBoundary';
+import Hero from './components/Hero';
+// import PortalDemo from './components/PortalDemo';
 // import ForwardParentInputRef from './components/ForwardParentInputRef';
 // import FocusInput from './components/FocusInput';
 // import RefsDemo from './components/RefsDemo';
@@ -27,8 +29,16 @@ import PortalDemo from './components/PortalDemo';
 function App() {
   return (
     <div className="App">
-      
-      <PortalDemo/>
+      <ErrorBoundary>
+        <Hero heroName="Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Superman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Joker" />
+      </ErrorBoundary>
+      {/* <PortalDemo/> */}
       {/* <ForwardParentInputRef /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
