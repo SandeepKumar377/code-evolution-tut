@@ -1,5 +1,6 @@
 import './App.css';
-import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+// import ParentComp from './components/ParentComp';
 // import Table from './components/Table';
 // import FragmentDemo from './components/FragmentDemo';
 // import Form from './components/Form';
@@ -24,7 +25,8 @@ function App() {
   return (
     <div className="App">
 
-      <ParentComp/>
+      <RefsDemo />
+      {/* <ParentComp/> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifeCycleA /> */}
