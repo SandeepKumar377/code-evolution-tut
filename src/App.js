@@ -1,7 +1,8 @@
 import './App.css';
+import CounterTwo from './components/CounterTwo';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
-import User from './components/User';
+// import User from './components/User';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
 // import ErrorBoundary from './components/ErrorBoundary';
@@ -35,9 +36,16 @@ function App() {
   return (
     <div className="App">
 
-      <User render={(islogedIn) => islogedIn ? 'Sandeep' : 'Guest'} />
+      <CounterTwo render={(count, incrementCount) => (
+        <ClickCounterTwo count={count} incrementCount={incrementCount} />
+      )} />
+      <CounterTwo render={(count, incrementCount) => (
+        <HoverCounterTwo count={count} incrementCount={incrementCount} />
+      )} />
+
+      {/* <User render={(islogedIn) => islogedIn ? 'Sandeep' : 'Guest'} />
       <HoverCounterTwo />
-      <ClickCounterTwo />
+      <ClickCounterTwo /> */}
 
       {/* <ClickCounter name="Sandeep" />
       <HoverCounter name="Sandeep" /> */}
