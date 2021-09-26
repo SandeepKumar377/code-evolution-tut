@@ -1,6 +1,9 @@
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import Hero from './components/Hero';
 // import PortalDemo from './components/PortalDemo';
@@ -32,9 +35,12 @@ function App() {
   return (
     <div className="App">
 
-      <ClickCounter name="Sandeep" />
-      <HoverCounter name="Sandeep" />
+      <User render={(islogedIn) => islogedIn ? 'Sandeep' : 'Guest'} />
+      <HoverCounterTwo />
+      <ClickCounterTwo />
 
+      {/* <ClickCounter name="Sandeep" />
+      <HoverCounter name="Sandeep" /> */}
 
       {/* <ErrorBoundary>
         <Hero heroName="Batman" />
